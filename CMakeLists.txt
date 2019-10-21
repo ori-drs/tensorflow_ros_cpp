@@ -4,7 +4,7 @@ project(tensorflow_ros_cpp)
 find_package(catkin REQUIRED)
 
 # variables affecting the search for the tensorflow library
-set(FORCE_TF_PIP_SEARCH OFF CACHE BOOL "Whether to search for pip-installed Tensorflow even on systems using C++11 ABI")
+set(FORCE_TF_PIP_SEARCH ON CACHE BOOL "Whether to search for pip-installed Tensorflow even on systems using C++11 ABI")
 set(DISABLE_TF_PIP_SEARCH OFF CACHE BOOL "Whether to skip search for pip-installed Tensorflow")
 set(FORCE_TF_BAZEL_SEARCH OFF CACHE BOOL "Whether to search for bazel-compiled Tensorflow even if tensorflow was already found")
 set(DISABLE_TF_BAZEL_SEARCH OFF CACHE BOOL "Whether to skip search for bazel-compiled Tensorflow")
